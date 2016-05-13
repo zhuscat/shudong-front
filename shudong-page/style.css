@@ -1,0 +1,66 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+}
+/*css of header*/
+header,footer{
+	width: 100%;
+    min-width: 1200px;
+    height: 64px;
+    background-color: #4a4a4a;
+}
+#hleft{
+	width: 64px;
+	height: 64px;
+	background-color: #5ab6f3;
+	float: left;
+}
+.search_input{
+    margin: 19px auto auto 66px;
+    float: left;
+}
+.search_input>i::before{
+	font-size: 22px;
+	line-height: 25px;
+    color: #E1DFE1;
+}
+.search_input>input{
+	height: 25px;
+	border: 0px;
+	font-family: "微软雅黑";
+	font-size: 18px;
+	line-height:25px;
+	color: #aca9ac;
+	background-color: #4a4a4a;
+	display: inline-block;
+	margin-left: 26px;
+}
+#hright{
+    display: -webkit-flex;
+    display: flex;
+    margin-left: 70%;
+}
+#hright>li{
+	flex: 0 0 80px;
+}
+#hright>li::before{
+	line-height: 64px;
+}
+#hright>li::before{
+	font-size: 23px;
+    color: #E1DFE1;
+}
+/*css of footer*/
+footer{
+    font-family: Helvetica;
+    font-size: 12px;
+    color: #9b9b9b;
+    line-height: 64px;
+    text-align: center;
+}
+
+.shadow{
+	box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.20);
+}
+
