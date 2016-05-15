@@ -5,12 +5,13 @@
 	<title>书洞：二手书交易平台</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="css/font-awesome.css">
+    <script src="jq/jquery-1.12.3.js" type="text/javascript"></script>
 </head>
 <body>
 <header>
 	<div id="hleft"></div>
 	<div class="search_input">
-	    <i class="fa fa-search"></i><input type="text" value="书名、作者、ISBN"/>
+	    <i class="fa fa-search"></i><input type="text" placeholder="书名、作者、ISBN"/>
 	</div>
 	<ul id="hright">
 		<li class="fa fa-plus"></li>
@@ -18,10 +19,33 @@
 		<li class="fa fa-user"></li>
 		<li class="fa fa-sign-out 2"></li>
 	</ul>
+	<ul id="hfloat">
+		<li class="hf"><div></div><div>发布</div></li>
+		<li class="hf"><div></div><div>提醒</div></li>
+		<li class="hf"><div></div><div id="hfspecial">个人信息</div></li>
+		<li class="hf"><div></div><div>登出</div></li>
+	</ul>
 </header>
 <article>
-<br/>阴影效果类名为shadow
+<br/>
+阴影效果<br/>
+.shadow{
+    box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.20);
+}
 </article>
 <footer >© 2016 书洞, all rights reserved</footer>
 </body>
+<script type="text/javascript">
+ $(function() {
+ 	for(var i=0;i<4;i++)
+ 	{
+ 	  (function(x){
+	  $("#hright>li").eq(x).mouseover(function(){
+      $("#hfloat>li").eq(x).css("opacity","0.79");
+	  }).mouseout(function(){
+      $("#hfloat>li").eq(x).css("opacity","0");
+	  });})(i);
+    }
+});
+  </script>
 </html>

@@ -2,6 +2,7 @@
 	margin: 0px;
 	padding: 0px;
 	text-decoration: none;
+	list-style: none;
 }
 /*css of header*/
 header,footer{
@@ -9,6 +10,7 @@ header,footer{
     min-width: 1200px;
     height: 64px;
     background-color: #4a4a4a;
+    position: relative;
 }
 #hleft{
 	width: 64px;
@@ -35,22 +37,69 @@ header,footer{
 	background-color: #4a4a4a;
 	display: inline-block;
 	margin-left: 26px;
+	text-indent: 0.3em;
 }
 #hright{
     display: -webkit-flex;
     display: flex;
-    margin-left: 70%;
+    position:absolute;
+    width: 320px;
+    top: 0px;
+    right: 107px;
+}
+#hfloat{
+    display: -webkit-flex;
+    display: flex;
+    position: absolute;
+    width: 320px;
+    top: 66px;
+    right: 106px;
 }
 #hright>li{
-	flex: 0 0 80px;
+	flex: 0 0 20px;	
+	margin: auto 30px;
+}
+.hf{
+	flex: 0 0 50px;	
+	margin: auto 15px;
+}
+#hfloat>.hf:nth-child(3){
+	flex: 0 0 80px;	
+	margin: auto 0px;
+}
+.hf{
+	text-align: center;
+	font-family: "微软雅黑";
+	font-size: 15px;
+	line-height: 27px;
+	color: #9b9b9b;
+	opacity: 0;
 }
 #hright>li::before{
 	line-height: 64px;
-}
-#hright>li::before{
-	font-size: 23px;
+	font-size: 24px;
     color: #E1DFE1;
+    cursor: pointer;
 }
+.hf>div:nth-child(1){
+	width: 0px;
+	margin: auto;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid #4a4a4a;
+
+}
+.hf>div:nth-child(2){
+	margin: auto;
+	width: 50px;
+	height: 27px;
+	border-radius: 4px;
+	background-color: #4a4a4a;
+}
+#hfspecial{
+	width: 80px;
+}
+
 /*css of footer*/
 footer{
     font-family: Helvetica;
