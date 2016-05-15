@@ -81,13 +81,18 @@ header,footer{
     color: #E1DFE1;
     cursor: pointer;
 }
+#hright>li.change::before{
+	line-height: 64px;
+	font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
 .hf>div:nth-child(1){
 	width: 0px;
 	margin: auto;
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
 	border-bottom: 5px solid #4a4a4a;
-
 }
 .hf>div:nth-child(2){
 	margin: auto;

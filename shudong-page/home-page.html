@@ -32,6 +32,8 @@
 .shadow{
     box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.20);
 }
+<br/><br/>
+只适配chrome
 </article>
 <footer >© 2016 书洞, all rights reserved</footer>
 </body>
@@ -42,8 +44,10 @@
  	  (function(x){
 	  $("#hright>li").eq(x).mouseover(function(){
       $("#hfloat>li").eq(x).css("opacity","0.79");
+      $("#hright>li").eq(x).addClass("change");
 	  }).mouseout(function(){
       $("#hfloat>li").eq(x).css("opacity","0");
+       $("#hright>li").eq(x).removeClass("change");
 	  });})(i);
     }
 });
