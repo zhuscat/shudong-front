@@ -7,80 +7,84 @@ footer{
 #book_class{
 	list-style-type: none;
 	margin: 0px;
-background:#fafafa;
-border:1px solid #dedada;
-width:613px;
-height:42px;
-position: absolute;
-left: 131px;
-top: 103px;
+  background:#fafafa;
+  border:1px solid #dedada;
+  width:613px;
+  height:42px;
+  position: absolute;
+  left: 131px;
+  top: 103px;
+}
+#book_class li{
+  height:42px;
+  border-right:1px solid #dedada;
 }
 #book_class a{
-padding: 13px 16px 13px 16px;
-font-family:"微软雅黑";
-font-size:12px;
-line-height:17px;
-border:1px solid #dedada;
-position: relative;
-top: 11px;
-border:none;
-border-right:1px solid #dedada;
+  vertical-align: center;
+  padding: 0px 16px 0px 16px;
+  font-family:"微软雅黑";
+  font-size:12px;
+  line-height:17px;
+  position: relative;
+  top: 11px;
 }
 .class-selected a{
-color:#4a4a4a;
-background:#ffffff;
-border-top: 1px solid #dedada;
-position: relative;
+  color:#4a4a4a;
+  position: relative;
+}
+.class-selected{
+  background-color: #ffffff;
 }
 .class a{
-color:#9b9b9b;
+  color:#9b9b9b;
+
+}
+.class:hover{
+  color:#4a4a4a;
+  background:#ffffff;
 }
 .class a:hover{
-color:#4a4a4a;
-background:#ffffff;
-border-top: 1px solid #dedada;
-position: relative;
+  color:#4a4a4a;
+
 }
 .search_book>i::before{
 	font-size: 12px;
 	line-height: 25px;
-    color:#4a4a4a ;
-position: relative;
-   top: 10px;
-   right: 11px;
+  color:#4a4a4a ;
+  position: relative;
+  top: 10px;
+  right: 11px;
 }
 .search_book>input{
 	font-family:"微软雅黑";
-    font-size:12px;
-   color:#aca9ac;
-   line-height:17px;
-   text-align:left;
-   width: 86px;
-   height: 17px;
-   background-color: #fafafa;
-   border: none;
-   position: relative;
-   top: 10px;
-   left: 0px;
-
+  font-size:12px;
+  color:#aca9ac;
+  line-height:17px;
+  text-align:left;
+  width: 86px;
+  height: 17px;
+  background-color: #fafafa;
+  border: none;
+  position: relative;
+  top: 10px;
+  left: 0px;
 }
 .search_book{
-	position: 
+  position: 
   text-align:center;
-	 float: right;
-	 width: 142px;
-	 height: 43px;
-   border:none;
-	 border-left: 1px solid #dedada;
-     text-align: center;
-     position: relative;
-     left: 251.5px;
-     bottom: 0.5px;
- 
+	float: right;
+	width: 142px;
+	height: 43px;
+  border:none;
+	border-left: 1px solid #dedada;
+  text-align: center;
+  position: relative;
+  left: 251.5px;
+  bottom: 0.5px;
 }
 #book_class li{
-display: inline;
-float: left;
+  display: inline;
+  float: left;
 }
 .information{
   color:#ffffff;
@@ -90,7 +94,7 @@ float: left;
   border:1px solid #dedada;
 }
 #information1{
-position: absolute;
+  position: absolute;
   top: 179px;
   left: 132px;
 }
@@ -100,60 +104,56 @@ position: absolute;
   left:132px;
   width:613px;
   height:221px;
-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.20);
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.20);
 }
 .book{
   width: 132px;
   height: 189px;
   position: absolute;
   left:-1px;
-
-
 }
 .book_name {
-font-family:"微软雅黑";
-font-size:14px;
-color:#5ab6f3;
-line-height:20px;
-text-align:left;
-padding: 16px 0px 4px 16px;
+  font-family:"微软雅黑";
+  font-size:14px;
+  color:#5ab6f3;
+  line-height:20px;
+  text-align:left;
+  padding: 16px 0px 4px 16px;
 }
 .book_price{
   font-family:"微软雅黑";
-font-size:18px;
-color:#000000;
-line-height:25px;
-text-align:left;
-padding: 4px 0px 4px 16px;
+  font-size:18px;
+  color:#000000;
+  line-height:25px;
+  text-align:left;
+  padding: 4px 0px 4px 16px;
 }
 .other_information{
   font-family:"微软雅黑";
-font-size:12px;
-color:#535353;
-line-height:17px;
-text-align:left;
-padding: 4px 0px 4px 16px;
+  font-size:12px;
+  color:#535353;
+  line-height:17px;
+  text-align:left;
+  padding: 4px 0px 4px 16px;
 }
 .book_information{
-position: absolute;
-top:15px;
-left: 132px;
-
+  position: absolute;
+  top:15px;
+  left: 132px;
 }
 .see {
-background:#5ab6f3;
-border:1px solid #5ab6f3;
-border-radius:4px;
-width:64px;
-height:28px;
-
+  background:#5ab6f3;
+  border:1px solid #5ab6f3;
+  border-radius:4px;
+  width:64px;
+  height:28px;
 }
 .close{
-background:#5ab6f3;
-border:1px solid #5ab6f3;
-border-radius:4px;
-width:64px;
-height:28px;
+  background:#5ab6f3;
+  border:1px solid #5ab6f3;
+  border-radius:4px;
+  width:64px;
+  height:28px;
 }
 .ed {
 background:#5ab6f3;
@@ -238,6 +238,7 @@ top: 9px;
 #personal_information{
   background:#ffffff;
 border:1px solid #dedada;
+border-bottom: 0px;
 width:291px;
 height:225px;
 
@@ -259,6 +260,7 @@ height:225px;
   position: absolute;
   top: 73px;
   left: 0px;
+
 }
 #personal_message li{
   font-family:"微软雅黑";
@@ -294,16 +296,18 @@ line-height:17px;
 text-align:left;
 }
 .ed{
-  font-family:"微软雅黑";
+font-family:"微软雅黑";
 font-size:12px;
 color:#ffffff;
 line-height:17px;
 }
 .classify-selected{
 background:#ffffff;
-border:1px solid #dedada;
+border: 1px solid #dedada;
 width:291px;
 height:34px;
+border-bottom: 0px;
+
 }
 .classify-selected a{
 font-family:"微软雅黑";
@@ -313,12 +317,15 @@ line-height:17px;
 position: relative;
 top: 9px;
 left: 16px;
+
 }
 .classify{
 background:#fafafa;
-border:1px solid #dedada;
+border: 1px solid #dedada;
+border-bottom: 0px;
 width:291px;
-height:34px;
+height:34px;'
+
 }
 .classify a{
   display: block;
@@ -326,10 +333,19 @@ height:34px;
   font-size:12px;
   color:#9b9b9b;
   line-height:17px;
-  padding: 9px 240px 9px 16px;
+   padding-top: 9px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+
 }
 .classify a:hover{
-  
 background:#ffffff;
 color:#4a4a4a;
+display: block;
+  font-family:"微软雅黑";
+  font-size:12px;
+  line-height:17px;
+  padding-top: 9px;
+  padding-bottom: 8px;
+  padding-left: 16px;
 }
