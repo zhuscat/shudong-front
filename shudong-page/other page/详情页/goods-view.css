@@ -64,7 +64,7 @@ footer {
 #hfloat {
     display: -webkit-flex;
     display: flex;
-    position: absolute;
+    position: ;
     width: 320px;
     top: 66px;
     right: 106px;
@@ -146,36 +146,40 @@ footer {
 
 /*homepage*/
 
-#main {
-    width: 972px;
-    margin: auto;
-}
-
-#main>.row:nth-child(n+1) {
-    margin: 30px auto;
-}
-
-#main>.row:nth-child(1) {
-    margin: 39px auto 30px;
-}
-
-.item {
-    display: inline-block;
-    width: 294px;
-    height: 190px;
+#view_left {
     background-color: #fff;
+    width: 615px;
+    position: relative;
+    top: 39px;
+    left: 129px;
 }
 
-.row>.item {
-    margin: auto 15px;
+.view_top {
+    width: 615px;
+    height: 300px;
+    border: 1px solid #dedada;
 }
 
 #introduction {
     float: left;
-    margin-left: 8px;
+    margin-left: 16px;
+    margin-top: 8px;
 }
 
-.item>img {
+#buy {
+    text-align: center;
+    position: relative;
+    color: white;
+    margin-top: 66px;
+    background: #5ab6f3;
+    border: 1px solid #5ab6f3;
+    border-radius: 4px;
+    width: 85px;
+    height: 36px;
+    line-height: 36px;
+}
+
+.view_top>img {
     float: left;
     border: 0px solid black;
 }
@@ -186,21 +190,21 @@ footer {
 
 .b_title {
     font-family: "黑体";
-    font-size: 14px;
+    font-size: 20px;
     color: #5ab6f3;
-    line-height: 20px;
+    line-height: 28px;
     text-align: left;
 }
 
 .b_price {
     font-family: "微软雅黑";
-    font-size: 18px;
+    font-size: 20px;
     color: #000000;
-    line-height: 25px;
+    line-height: 28px;
     text-align: left;
 }
 
-.b_writer {
+.b_ {
     font-family: "微软雅黑";
     font-size: 12px;
     color: #4a4a4a;
@@ -208,44 +212,44 @@ footer {
     text-align: left;
 }
 
-.b_isbn {
-    font-family: "微软雅黑";
-    font-size: 12px;
-    color: #535353;
-    line-height: 17px;
-    text-align: left;
+#intr_rep {
+    width: 615px;
+    margin-top: 8px;
 }
 
-.user {
-    height: 24px;
-    padding-left: 76px;
-    font-size: 0px;
-    margin-top: 46px;
-    overflow: hidden;
-}
-
-.user>div {
+#intr_rep>ul>li {
     display: inline-block;
-    height: 24px;
+    width: 28px;
+    height: 20px;
+    margin: auto 13px;
     font-family: "微软雅黑";
-    font-size: 12px;
-    color: #535353;
-    line-height: 24px;
-    text-align: left;
-    vertical-align: middle;
+    font-size: 14px;
+    color: #5ab6f3;
+    line-height: 20px;
 }
 
-.user>img {
-    font-size: 0px;
-    margin-left: 8px;
-    display: inline-block;
-    vertical-align: middle;
+#bookintr {
+    height: 20px;
+    padding: 16px;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    color: #4a4a4a;
+    line-height: 20px;
+}
+
+#reply {
+    height: 20px;
+    padding: 16px;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    color: #4a4a4a;
+    line-height: 20px;
 }
 
 #page {
     width: 344px;
     margin: auto;
-    margin-bottom:29px;
+    margin-bottom: 29px;
 }
 
 #page ul>li {
@@ -266,4 +270,100 @@ footer {
 #page ul>li.change2 {
     text-align: right;
     width: 42px;
+}
+
+#view_right {
+    width: 293px;
+    margin-top: 39px;
+    margin-right: 200px;
+    float: right;
+}
+
+#other_sale {
+    border: 1px solid #dedada;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.20);
+    width: 291px;
+    background-color: white;
+}
+
+#other_sale li {
+    display: inline-block;
+    margin-bottom: 16px;
+    margin-right: 15px;
+}
+
+#other_title {
+    padding-left: 20px;
+    height: 49px;
+    line-height: 49px;
+    border-bottom: 1px solid #dedada;
+    font-family: "微软雅黑";
+    font-size: 12px;
+    color: #535353;
+    text-align: left;
+}
+
+#fankui {
+    background-color: none;
+    font-family: "微软雅黑";
+    font-size: 12px;
+    color: #9b9b9b;
+    line-height: 17px;
+    margin: 16px auto 32px auto;
+}
+
+#user_name {
+    display: inline-block;
+}
+
+#personal_information {
+    padding:19px 0px 0px 16px;
+    background: #ffffff;
+    border: 1px solid #dedada;
+    border-bottom: 0px;
+    width: 291px;
+    height: 225px;
+    margin-bottom: 32px;
+}
+
+#personal_message li {
+    font-family: "微软雅黑";
+    font-size: 12px;
+    color: #535353;
+    line-height: 17px;
+    text-align: left;
+    padding: 4px 0px 4px 0px;
+}
+
+#seller_name {
+    font-family: "微软雅黑";
+    font-size: 14px;
+    color: #535353;
+    line-height: 20px;
+    text-align: left;
+}
+
+#seller_school {
+    font-family: "微软雅黑";
+    font-size: 12px;
+    color: #9b9b9b;
+    line-height: 17px;
+    text-align: left;
+}
+
+.ed {
+    background: #5ab6f3;
+    border: 1px solid #5ab6f3;
+    border-radius: 4px;
+    width: 64px;
+    height: 28px;
+    position: relative;
+    top: 8px;
+}
+
+.ed {
+    font-family: "微软雅黑";
+    font-size: 12px;
+    color: #ffffff;
+    line-height: 17px;
 }
