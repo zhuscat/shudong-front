@@ -45,7 +45,7 @@
         <div style="position: relative;">
             <div id="view_right">
                 <div id="personal_information">
-                    <img width="36px" height="36px" src="goods-view-img/head.png" id="headpic2">
+                    <img style="vertical-align: middle;" width="36px" height="36px" src="goods-view-img/head.png" id="headpic2">
                     <ul id="user_name">
                         <li>
                             <p id="seller_name">卖家：卖家名</p>
@@ -60,7 +60,7 @@
                         <li class="personalinfo">QQ：123456789</li>
                         <li class="personalinfo">微信：weixin123</li>
                     </ul>
-                    <button class="ed" id="message_edit">编辑</button>
+                    <button class="ed" id="message_edit">私信</button>
                 </div>
                 <div id="other_sale">
                     <div id="other_title">该卖家还出售......</div>
@@ -88,56 +88,59 @@
                             <li class="b_">出版社: 四川文艺出版社</li>
                             <li class="b_">ISBN: 9787541142659</li>
                             <li class="b_">所在地: 华南理工大学大学城校区</li>
-                            <div id="buy">购买</div>
+                            <button id="buy">购买</button>
                         </ul>
                     </aside>
                 </div>
                 <div id="intr_rep">
-                    <ul>
-                        <li>详情</li>
-                        <li>回复</li>
-                    </ul>
+                    <div>
+                        <button id="butt_info">详情</button><!--
+                        --><button id="butt_rep">回复</button>
+                    </div>
                     <div id="bookintr">
                         书比较新，就翻过一遍，没有任何破损。
                     </div>
                     <div id="reply">
-                        dff
+                        <ul>
+                            <li>
+                                <img src="goods-view-img/head.png" width="36px" heigth="36px"/>
+                                <ul class="comment"><li class="c_name">用户名</li><li class="c_context">我是评论1</li></ul>
+                            </li>
+                            <li>
+                                <img src="goods-view-img/head.png" width="36px" heigth="36px"/>
+                                <ul class="comment"><li class="c_name">用户名</li><li class="c_context">我是评论2</li></ul>
+                            </li>
+                            <li>
+                                <img src="goods-view-img/head.png" width="36px" heigth="36px"/>
+                                <ul class="comment"><li class="c_name">用户名</li><li class="c_context">我是评论3</li></ul>
+                            </li>
+                            <div id="c_enter"><input placeholder="输入内容" /></div>
+                            <div id="c_page"><ul style="float:right;margin:0px auto 2px;margin:0px 0px 10px 0px;"><li class="c_num">1</li><li class="c_num">2</li></ul></div>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div id="page">
-                <ul>
-                    <li class="change1">上一页</li>
-                    <li>1</li>
-                    <li> 2 </li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                    <li>6</li>
-                    <li>7</li>
-                    <li>8</li>
-                    <li>9</li>
-                    <li>10</li>
-                    <li class="change2">下一页</li>
-                </ul>
-            </div>
+
         </div>
     </article>
     <footer>© 2016 书洞, all rights reserved</footer>
 </body>
 <script type="text/javascript">
 $(function() {
-    for (var i = 0; i < 4; i++) {
-        (function(x) {
-            $("#hright>li").eq(x).mouseover(function() {
-                $("#hfloat>li").eq(x).css("opacity", "0.79");
-                $("#hright>li").eq(x).addClass("change");
-            }).mouseout(function() {
-                $("#hfloat>li").eq(x).css("opacity", "0");
-                $("#hright>li").eq(x).removeClass("change");
-            });
-        })(i);
-    }
+$("#butt_info").click(function(){
+    $("#butt_info").css("border","none").css("border-top","5px solid #5ab6fc");
+    $("#butt_rep").css("border","none").css("border-top","5px solid #ffffff");
+    $("#bookintr").css("display","block");
+    $("#reply").css("display","none");
+}
+);
+$("#butt_rep").click(function(){
+    $("#butt_rep").css("border","none").css("border-top","5px solid #5ab6fc");
+    $("#butt_info").css("border","none").css("border-top","5px solid #ffffff");
+    $("#bookintr").css("display","none");
+    $("#reply").css("display","block");
+}
+);
 });
 </script>
 

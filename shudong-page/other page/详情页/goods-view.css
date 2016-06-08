@@ -149,9 +149,11 @@ footer {
 #view_left {
     background-color: #fff;
     width: 615px;
-    position: relative;
-    top: 39px;
-    left: 129px;
+    float: left;
+    margin-top: 39px;
+    margin-left: 129px;
+    margin-bottom: 58px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.20);
 }
 
 .view_top {
@@ -167,16 +169,18 @@ footer {
 }
 
 #buy {
+    font-family: "微软雅黑";
     text-align: center;
     position: relative;
     color: white;
-    margin-top: 66px;
+    margin-top: 59px;
     background: #5ab6f3;
     border: 1px solid #5ab6f3;
     border-radius: 4px;
     width: 85px;
     height: 36px;
     line-height: 36px;
+    font-size: 16px;
 }
 
 .view_top>img {
@@ -214,18 +218,28 @@ footer {
 
 #intr_rep {
     width: 615px;
-    margin-top: 8px;
 }
 
-#intr_rep>ul>li {
+#intr_rep button {
     display: inline-block;
-    width: 28px;
-    height: 20px;
-    margin: auto 13px;
+    background-color: #ffffff;
+    text-align: center;
+    width: 54px;
+    height: 31px;
     font-family: "微软雅黑";
     font-size: 14px;
     color: #5ab6f3;
-    line-height: 20px;
+    line-height: 31px;outline:none;
+}
+
+#butt_info {
+    border:none;
+    border-top: 5px solid #5ab6f3;
+}
+
+#butt_rep {
+    border:none;
+    border-top: 5px solid #ffffff;
 }
 
 #bookintr {
@@ -238,12 +252,51 @@ footer {
 }
 
 #reply {
-    height: 20px;
+    display: none;
     padding: 16px;
     font-family: "微软雅黑";
     font-size: 14px;
     color: #4a4a4a;
     line-height: 20px;
+    padding-bottom: 0px;
+}
+
+#reply>ul>li {
+    height: 53px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+#c_enter {
+    padding: 15px 0px 10px 0px;
+}
+
+.comment {
+    vertical-align: top;
+    display: inline-block;
+}
+
+.c_name {
+    width: 540px;
+    font-family: "微软雅黑";
+    font-size: 12px;
+    color: #5ab6f3;
+    line-height: 17px;
+}
+
+.c_context {
+    font-family: "微软雅黑";
+    font-size: 12px;
+    color: #4a4a4a;
+    line-height: 17px;
+}
+
+#c_enter>input {
+    width: 571px;
+    height: 34px;
+    padding-left: 10px;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
 }
 
 #page {
@@ -252,12 +305,12 @@ footer {
     margin-bottom: 29px;
 }
 
-#page ul>li {
+.c_num {
     font-family: "微软雅黑";
     font-size: 12px;
     color: #9b9b9b;
     line-height: 17px;
-    text-align: center;
+    text-align: right;
     width: 26px;
     display: inline-block;
 }
@@ -314,25 +367,34 @@ footer {
 
 #user_name {
     display: inline-block;
+    margin-top: -4px;
+    height: 41px;
+    vertical-align: middle;
 }
 
 #personal_information {
-    padding:19px 0px 0px 16px;
+    padding: 19px 0px 0px 16px;
     background: #ffffff;
     border: 1px solid #dedada;
     border-bottom: 0px;
-    width: 291px;
-    height: 225px;
+    width: 275px;
+    height: 208px;
     margin-bottom: 32px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.20);
 }
 
 #personal_message li {
     font-family: "微软雅黑";
     font-size: 12px;
     color: #535353;
+    height: 17px;
     line-height: 17px;
     text-align: left;
     padding: 4px 0px 4px 0px;
+}
+
+#personal_message {
+    margin-top: 8px;
 }
 
 #seller_name {
@@ -341,6 +403,7 @@ footer {
     color: #535353;
     line-height: 20px;
     text-align: left;
+    margin-bottom: 4px;
 }
 
 #seller_school {
@@ -352,13 +415,12 @@ footer {
 }
 
 .ed {
+    margin-top: 12px;
     background: #5ab6f3;
     border: 1px solid #5ab6f3;
     border-radius: 4px;
     width: 64px;
-    height: 28px;
-    position: relative;
-    top: 8px;
+    height: 30px;
 }
 
 .ed {
@@ -366,4 +428,8 @@ footer {
     font-size: 12px;
     color: #ffffff;
     line-height: 17px;
+}
+
+button:hover {
+    cursor:pointer;
 }
